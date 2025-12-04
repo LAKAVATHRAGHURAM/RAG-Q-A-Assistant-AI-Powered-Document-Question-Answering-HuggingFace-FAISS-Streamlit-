@@ -47,7 +47,7 @@ The system extracts relevant information using **FAISS vector search** and gener
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone (https://github.com/LAKAVATHRAGHURAM/RAG-Q-A-Assistant-AI-Powered-Document-Question-Answering-HuggingFace-FAISS-Streamlit-.git)
+git clone https://github.com/LAKAVATHRAGHURAM/RAG-Q-A-Assistant-AI-Powered-Document-Question-Answering-HuggingFace-FAISS-Streamlit-.git
 ```
 
 2️⃣ Install Dependencies
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 
 3️⃣ Add Your HuggingFace Token
 ```bash
-Inside app.py, update:
+Inside app.py
 ```
 ```bash
 HF_TOKEN = "your_huggingface_token"
