@@ -1,0 +1,2 @@
+# RAG-Q-A-Assistant-AI-Powered-Document-Question-Answering-HuggingFace-FAISS-Streamlit-
+A lightweight and powerful Retrieval-Augmented Generation (RAG) application that allows users to upload documents or provide URLs and ask questions about them. The system extracts relevant information using FAISS vector search and generates accurate, context-aware answers using Llama-3 (8B) via HuggingFace Inference API.
