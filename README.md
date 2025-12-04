@@ -33,7 +33,103 @@ The system extracts relevant information using **FAISS vector search** and gener
 ## 📂 Project Structure
 
 
-.
 ├── app.py # Main Streamlit application
+
 ├── requirements.txt # Dependencies
+
 └── README.md # Documentation
+
+
+
+---
+
+## 🔧 Installation
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/rag-qa-app.git
+cd rag-qa-app
+```
+
+2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+
+3️⃣ Add Your HuggingFace Token
+```bash
+Inside app.py, update:
+```
+```bash
+HF_TOKEN = "your_huggingface_token"
+
+```
+Or set it as an environment variable:
+```bash
+export HF_TOKEN="your_huggingface_token"
+```
+
+
+▶️ Running the App
+
+Launch Streamlit:
+```bash
+streamlit run app.py
+```
+
+Your app will open automatically at:
+```bash
+http://localhost:8501
+```
+
+## 🧠 How It Works
+
+User uploads a document or enters a URL/text
+
+System extracts text from the source
+
+Text is split into overlapping chunks
+
+Embeddings are generated for each chunk
+
+FAISS index stores embeddings for fast similarity search
+
+User asks a question → relevant chunks are retrieved
+
+Llama-3 model generates the final answer using the retrieved context
+
+## 📌 Example Use Cases
+
+Chat with any PDF, DOCX, or research paper
+
+AI-powered study and revision assistant
+
+Technical documentation helper
+
+Research assistant
+
+Knowledge-base Q&A system
+
+## ⚠️ Limitations
+
+Llama-3-8B via API may truncate long responses
+
+FAISS search is CPU-only (slower for very large datasets)
+
+Web page extraction depends on the site's HTML structure
+
+## 🤝 Contributing
+
+Contributions are welcome!
+You may improve the app by adding:
+
+Multi-file upload support
+
+Conversation history
+
+Citations in answers
+
+Advanced UI features
+
+Support for multiple LLM providers
