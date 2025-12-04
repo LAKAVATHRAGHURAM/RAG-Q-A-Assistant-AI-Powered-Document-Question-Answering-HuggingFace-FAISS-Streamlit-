@@ -47,8 +47,7 @@ The system extracts relevant information using **FAISS vector search** and gener
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/rag-qa-app.git
-cd rag-qa-app
+git clone (https://github.com/LAKAVATHRAGHURAM/RAG-Q-A-Assistant-AI-Powered-Document-Question-Answering-HuggingFace-FAISS-Streamlit-.git)
 ```
 
 2️⃣ Install Dependencies
